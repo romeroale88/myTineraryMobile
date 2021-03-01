@@ -55,7 +55,7 @@ const Register =(props)=>{
               </TouchableOpacity>
               <TouchableOpacity onPress={()=>props.navigation.navigate('Create')}>
                 <View style={{backgroundColor:'#1c4573', borderRadius:10,marginTop:15}}>
-                  <Text style={styles.texto}>You don't have an account, click here</Text>
+                  <Text style={styles.texto}>You don't have an account? click here</Text>
                 </View>
               </TouchableOpacity>
         </ImageBackground>

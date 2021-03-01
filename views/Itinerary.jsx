@@ -19,8 +19,8 @@ const Itinerary = (props)=>{
                         <Text style={styles.infoTexto}>{`Hours: ${props.itinerary.hours}`}</Text>
                     </View>
                     <View style={{flexDirection:'row', marginVertical:15}}>
-                        {props.itinerary.hastags.map(hastag =>{
-                            return <Text style={{color:'#fafafa', fontSize:12, fontWeight:'bold',marginRight:5}} key={hastag._id}>{hastag}</Text>
+                        {props.itinerary.hastags.map((hastag,i) =>{
+                            return <Text style={{color:'#fafafa', fontSize:12, fontWeight:'bold',marginRight:5}} key={hastag}>{hastag}</Text>
                         })}
                     </View>
                     <View style={{width:'90%',alignItems:'center'}}>
@@ -31,8 +31,8 @@ const Itinerary = (props)=>{
                         props.itinerary.activities.map(activity =>{
                             return (
                                 <View key={activity._id} style={{alignItems:'center',paddingVertical:15}}>
-                                <Text style={{color:'#fafafa', fontSize:15,fontWeight:'bold',marginBottom:15}}>{activity.activityTitle}</Text>
-                                <Image style={styles.imgActivity} source={{uri:activity.activityImage}} />
+                                    <Text style={{color:'#fafafa', fontSize:15,fontWeight:'bold',marginBottom:15}}>{activity.activityTitle}</Text>
+                                    <Image style={styles.imgActivity} source={{uri:activity.activityImage}} />
                                 </View>
                                 )
                             })

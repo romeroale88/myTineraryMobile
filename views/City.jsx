@@ -11,9 +11,9 @@ const City = (props)=>{
             props.navigation.navigate('Itineraries', props.city)
         }
         else{
-            ToastAndroid.show('You have to be logged in!',
-            ToastAndroid.TOP,25,
-            50)
+            // ToastAndroid.show('You have to be logged in!',
+            // ToastAndroid.TOP,25,
+            // 50)
             props.navigation.navigate('Login')
         }
     }
